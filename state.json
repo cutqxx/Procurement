@@ -1,0 +1,46 @@
+{
+  "cookies": [
+    {
+      "sameSite": "None",
+      "name": "_GRECAPTCHA",
+      "value": "09ABThnb52KWwc2YyaHeqELkn7wrABplzwVeqedDUk8Jfcx06cqTbrOJbroB8ZEsG7mB4KukN-cOw_rxX5YL0rLlA",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1670156754.454146,
+      "httpOnly": true,
+      "secure": true
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://dev.procurement.pragma.info",
+      "localStorage": [
+        {
+          "name": "token",
+          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBdXRoZW50aWNhdGlvbiIsImlzcyI6Ijd3aW5kcy1wcm9jdXJlbWVudCIsImlkIjoxNSwiZXhwIjoxNjU0NjkxMTU1LCJ2ZXJzaW9uIjoxfQ.gHMyB__L--57dtRvaSp34ag0iOkrM8D7evxZSjee6k39RclvUO6xZqrSAJGTy-ei16RdEYetxlEU7Xsu1aA8mw"
+        },
+        {
+          "name": "refreshToken",
+          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBdXRoZW50aWNhdGlvbiIsImlzcyI6Ijd3aW5kcy1wcm9jdXJlbWVudCIsImlkIjoxNSwiZXhwIjoxNjU1ODE0MzU1LCJ2ZXJzaW9uIjoxfQ.vMTRQd9RG9uw-J-d1uHqg1D0cEF3lzJ2HEGAlo9a-555AI_8Ommb9AIvDq7ntUVd541N64yQ_EpPZO-_gvYbZw"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09ABThnb5v_O41nI2FgadXsp3vCfSv1m3hxE8HKJnA1-x9itHFSZ9m-PHDVMHsP0cB57bXEdl7pZhMYlp0EFdZxg367Q"
+        },
+        {
+          "name": "tokenDeathDate",
+          "value": "1654691155629"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "MWR3a3RiazFqbGFsNGE="
+        }
+      ]
+    }
+  ]
+}

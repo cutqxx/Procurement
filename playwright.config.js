@@ -14,9 +14,9 @@ const { devices } = require('@playwright/test');
  */
 const config = {
   testDir: './tests',
-
+  // globalSetup: require.resolve("./global-setup"),
   use: {
-    // storageState: 'authState.json',
+    // storageState: './authState.json',
     actionTimeout: 0,
     headless:false,
     launchOptions: {

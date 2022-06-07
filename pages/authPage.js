@@ -5,16 +5,22 @@ exports.authPage = class authPage {
 /**
  * @param {import('@playwright/test').Page} page
  */
-constructor(page) {
+constructor(page,context,browser) {
+this.browser = browser;
 this.page = page;
+this.context = context;
 this.LOGIN_INPUT = "input.mdc-text-field__input";
 this.PASSWORD_INPUT = 'input.mdc-text-field__input[type="password"]';
 this.BUTTON_AUTH = page.locator("button.mdc-button.mdc-button--raised");
 this.TITLE_NAME = "head title";
 }
 
+async new_context(){
+    await this.browser.newContext({ storageState: 'authState.json' });
+}
+
 async goto() {
-await this.page.goto('https://dev.procurement.pragma.info/auth');
+await this.page.goto('https://dev.procurement.pragma.info/projects');
 }
 
 async insert_login() {
