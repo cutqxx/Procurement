@@ -15,12 +15,12 @@ const { authPage } = require('../pages/authPage.js');
 
 test("auth_2", async ({ browser,page }) => {
   const context = await browser.newContext({
-    storageState:
-      "state.json",
-  });
+    storageState:"state.json",});
+
   page = await context.newPage();
   const auth = new authPage(page);
   await auth.goto()
   await auth.auth_admin();
-
+  await page.waitForTimeout(500)
+  await page.close();
 });

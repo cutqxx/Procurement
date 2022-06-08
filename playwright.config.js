@@ -20,7 +20,7 @@ const config = {
     actionTimeout: 0,
     headless:false,
     launchOptions: {
-      slowMo: 100,
+      slowMo: 300,
     },
 
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -45,7 +45,7 @@ const config = {
     timeout: 5000
   },
   /* Run tests in files in parallel */
-  fullyParallel: true,
+  fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
