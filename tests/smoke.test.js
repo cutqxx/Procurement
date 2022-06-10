@@ -33,7 +33,12 @@ test.describe("smoke @smoke", () => {
     await sheet.add_potrebnost();
     await sheet.check_add_potreb();
     await page.close();
-    
+  });
+  test("test_fill_forma_prorabotka @new", async ({ browser }) => {
+    const context = await browser.newContext({ storageState: "./state.json" });
+    const page = await context.newPage();
+    // --- main code:
+
 
 
   });
